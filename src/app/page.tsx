@@ -228,7 +228,7 @@ export default function HomePage() {
        <section className="bg-blue-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">What Our Clients Say</h2>
-          <p className="italic mb-4">"Buying a home has never been this easy! Great service and excellent properties."</p>
+          <p className="italic mb-4">&quot;Buying a home has never been this easy! Great service and excellent properties.&quot;</p>
           <p className="font-semibold">- Rohan Mehta</p>
         </div>
       </section>
