@@ -1,14 +1,4 @@
-// import React from 'react'
 
-// const Navbar = () => {
-//   return (
-//     <>
-//     <h1>Navbar</h1>
-//     </>
-//   )
-// }
-
-// export default Navbar
 
 
 
@@ -30,9 +20,9 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
-          <Link href="#features" className="hover:text-blue-600">Features</Link>
+          <Link href="/features" className="hover:text-blue-600">Features</Link>
           <Link href="#pricing" className="hover:text-blue-600">Pricing</Link>
-          <Link href="#contact" className="hover:text-blue-600">Contact</Link>
+          <Link href="/contact" className="hover:text-blue-600">Contact</Link>
 
           <Link
             href="/login"
