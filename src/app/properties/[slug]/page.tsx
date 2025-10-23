@@ -32,14 +32,14 @@ export default function PropertyPage({ params }: { params: { slug: string } }) {
   };
 
   // Get similar properties (same city or type)
-  const similarProperties = allProperties
-    .filter(
-      (p) =>
-        p.slug !== property.slug &&
-        (p.location.includes(property.location.split(",")[1]?.trim()) ||
-          p.type === property.type)
-    )
-    .slice(0, 4);
+const similarProperties = allProperties
+  .filter(
+    (p) =>
+      p.slug !== property.slug &&
+      p.location.includes(property.location.split(",")[1]?.trim())
+  )
+  .slice(0, 4);
+
 
   return (
     <>
