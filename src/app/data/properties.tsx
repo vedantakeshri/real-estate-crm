@@ -1,4 +1,21 @@
 // src/data/properties.js
+
+export type Property = {
+  id: number;
+  title: string;
+  location: string;
+  price: string;
+  image: string;
+  slug: string;
+  bedrooms: number;
+  bathrooms: number;
+  area: string;
+  description: string;
+  features: string[];
+  type?: string; // optional if you want to categorize properties
+};
+
+
 export const allProperties = [
   {
     id: 1,
@@ -116,17 +133,4 @@ export const allProperties = [
 
 
 
-export type Property = {
-  id: number;
-  title: string;
-  location: string;
-  price: string;
-  image: string;
-  slug: string;
-  bedrooms: number;
-  bathrooms: number;
-  area: string;
-  description: string;
-  features: string[];
-  type?: string; // optional if you want to categorize properties
-};
+
