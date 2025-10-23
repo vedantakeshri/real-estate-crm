@@ -4,7 +4,7 @@
 import { useState, useMemo, ChangeEvent } from 'react';
 import PropertyCard from '../components/PropertyCard';
 import Navbar from '../components/Navbar';
-import { allProperties } from '../data/properties';
+import { allProperties, Property } from '../data/properties';
 
 function parsePrice(price: string): number {
   const num = parseFloat(price.replace(/[₹,\s]/g, ''));
@@ -33,7 +33,7 @@ export default function PropertiesPage(): JSX.Element {
   ];
 
   const filteredProperties = useMemo(() => {
-    return allProperties.filter((property) => {
+    return allProperties.filter((property: Property) => {
       const priceValue = parsePrice(property.price);
       const matchesSearch =
         property.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -106,7 +106,7 @@ export default function PropertiesPage(): JSX.Element {
           </aside>
 
           <section className="md:w-3/4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {paginatedProperties.map((property) => (
+            {paginatedProperties.map((property: Property) => (
               <PropertyCard key={property.id} property={property} />
             ))}
           </section>
