@@ -54,7 +54,7 @@ export default function PropertyCard({ property }: { property: Property }) {
         <h4 className="text-lg font-semibold mb-1">{property.title}</h4>
         <p className="text-sm text-gray-600">{property.location}</p>
         <p className="text-blue-600 font-bold mt-2">{property.price}</p>
-        <Link href={`/property/${property.slug}`} className="inline-block mt-4 text-sm text-blue-600 hover:underline">
+        <Link href={`/properties/${property.slug}`} className="inline-block mt-4 text-sm text-blue-600 hover:underline">
           View Details
         </Link>
       </div>
